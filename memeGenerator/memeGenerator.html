@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -9,11 +10,13 @@
     <title>DOM-Puzzle</title>
 </head>
 <body>
-        <div class="container">
-            <h1 class="text-center my-5">Meme-Generator</h1>
+        <div class="container text-center">
+            <h1 class="text-center my-4">Meme-Generator</h1>
+            <br> 
+            <p>Upload an image & add text to create your own Meme!</p>
 
-            <button id="darkModeToggle" class=" mb-4 text-center mx-auto btn btn-dark">Dark Mode</button>
-            <i class="fa-regular fa-moon fa-2x"></i>
+            <button id="darkModeToggle" style="display:none;" class=" mb-4 text-center mx-auto btn btn-dark">Dark Mode</button>
+            
 
             <div class="input-group">
                 <input type="text" class="form-control" id="topText" placeholder="top Text" aria-label="Top Text">
@@ -25,16 +28,22 @@
                 <input type="file" class="form-control" id="imageInput" accept="image/*">
             </div>
             <div class="button">
-                <button id="download-btn" " class="btn btn-primary">Download Meme</button>
+                <button id="download-btn" " class="btn btn-primary text-center">Download Meme</button>
             </div>
 
             <div id="memeContainer">
-                <img id="memeImage" src="" alt="Meme Image">
+                <img id="memeImage"  src="https://img.freepik.com/premium-vector/illustration-upload_498740-5719.jpg" alt="Meme Image">
                 <div class="top-text" id="topTextDisplay"></div>
                 <div class="bottom-text" id="bottomTextDisplay"></div>
             </div>
             
         </div>
+        <div id="particles-js"></div>
+        <footer class="text-center">
+            <div class="footer-section m-4">
+            BlockchainLabs PTY LTD - 2024&copy;
+            <div></div>
+        </footer>
     <script src="./script.js"></script>
 </body>
 </html>
