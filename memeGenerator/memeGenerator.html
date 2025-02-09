@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Puzzle</title>
+</head>
+<body>
+        <div class="container">
+            <h1 class="text-center my-5">Meme-Generator</h1>
+
+            <button id="darkModeToggle" class=" mb-4 text-center mx-auto btn btn-dark">Dark Mode</button>
+            <i class="fa-regular fa-moon fa-2x"></i>
+
+            <div class="input-group">
+                <input type="text" class="form-control" id="topText" placeholder="top Text" aria-label="Top Text">
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" id="bottomText" placeholder="bottom Text" aria-label="Bottom Text">
+            </div>
+            <div class="input-group">
+                <input type="file" class="form-control" id="imageInput" accept="image/*">
+            </div>
+            <div class="button">
+                <button id="download-btn" " class="btn btn-primary">Download Meme</button>
+            </div>
+
+            <div id="memeContainer">
+                <img id="memeImage" src="" alt="Meme Image">
+                <div class="top-text" id="topTextDisplay"></div>
+                <div class="bottom-text" id="bottomTextDisplay"></div>
+            </div>
+            
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>

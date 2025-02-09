@@ -1,0 +1,51 @@
+body {
+    background-color:#fff;
+    color:#333;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color:rgb(82, 67, 126);
+    color: whitesmoke;
+}
+#memeContainer {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+#memeContainer img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+}
+#memeContainer .top-text, #memeContainer .bottom-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 48px;
+    font-weight: 500;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+.top-text {
+    font-family: Impact;
+    top: 10px;
+}
+.bottom-text {
+     font-family: Impact;
+    bottom: 10px;
+}
+#darkModeToggle {
+    background-color: rgb(60, 15, 194);
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#darkModeToggle:hover {
+    background-color: #555;
+}
+.input-group {
+    margin-bottom:20px;
+}
+
